@@ -36,7 +36,7 @@ hyper_parameters = dict(
     output_num_units=18, output_nonlinearity=nonlinearities.softmax,
     update_learning_rate=0.01,
     update_momentum=0.9,
-    max_epochs=30,
+    max_epochs=2,
 )
 
 

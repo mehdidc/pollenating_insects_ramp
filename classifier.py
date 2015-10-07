@@ -2,16 +2,15 @@ import os
 os.environ["THEANO_FLAGS"] = "device=gpu"
 
 from sklearn.pipeline import make_pipeline
-from caffezoo.googlenet import GoogleNet
+from caffezoo.vgg import VGG
 from sklearn.base import BaseEstimator
 from sklearn.ensemble import RandomForestClassifier
-
 
 class Classifier(BaseEstimator):
  
     def __init__(self):
         self.clf = make_pipeline(
-            GoogleNet(layer_names=["inception_3b/output"]),
+            VGG(layer_names=["pool3"]),
             RandomForestClassifier(n_estimators=100, max_depth=25)
         )
         

@@ -31,7 +31,7 @@ def build_model(hyper_parameters):
 hyper_parameters = dict(
     conv1_num_filters=64, conv1_filter_size=(3, 3), pool1_pool_size=(2, 2),
     conv2_num_filters=128, conv2_filter_size=(2, 2), pool2_pool_size=(2, 2),
-    conv3_num_filters=128, conv3_filter_size=(2, 2), pool3_pool_size=(2, 2),
+    conv3_num_filters=256, conv3_filter_size=(2, 2), pool3_pool_size=(2, 2),
     hidden4_num_units=500, hidden5_num_units=500,
     output_num_units=18, output_nonlinearity=nonlinearities.softmax,
     update_learning_rate=0.01,

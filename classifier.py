@@ -13,6 +13,8 @@ layer_names can accept a list of strings, each string
 is a layer name. The complete list of layer names
 can be seen in this graph :
 
+    https://drive.google.com/open?id=0B1CFqLHwhNoaTnVsbWtkWEhVYlE
+
 Each node is either a convolution, a pooling layer or a nonlinearity layer, or 
 other different kinds of layers.
 The nodes representing convolution and pooling layers start by
